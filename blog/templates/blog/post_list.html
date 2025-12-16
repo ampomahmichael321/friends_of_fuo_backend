@@ -1,0 +1,31 @@
+<!-- prettier-ignore -->
+{% extends 'blog/post_layout.html' %}
+{% load static %}
+{% block title %}Friend of Fuo Blog{% endblock %}
+{% block head %}<link
+  rel="stylesheet"
+  href="{% static 'styles/post-list.css' %}"
+/>{%endblock%} {% block main%}
+<div class="main">
+  <h2 class="color-gold">LATEST STORIES</h2>
+  <div class="latest-stories-section">
+    {% for post in posts %}
+    <a href="{% url 'blog:post_detail' pk=post.id%}">
+      <div class="story-card">
+        <div class="top-section">
+          <img
+            class="project-top-image"
+            src="{{ post.image.url }}"
+            alt="Image of Children in classroom holding their books"
+          />
+        </div>
+        <div class="bottom-section">
+          <h3>{{post.title}}</h3>
+          <p class="learn-more-link">Read more</p>
+        </div>
+      </div>
+    </a>
+    {% endfor %}
+  </div>
+  {% include "blog/pagination.html" %} {% endblock %}
+</div>

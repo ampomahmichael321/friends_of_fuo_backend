@@ -1,0 +1,23 @@
+<!-- prettier-ignore -->
+{% extends 'blog/post_layout.html' %}
+{% load static %}
+{% block title %}{{post.title}}{% endblock %}
+{%block head %}
+<link rel="stylesheet" href="{% static 'styles/post-detail.css' %}" />
+{%endblock%} {%block main%}
+<div class="main">
+  <div class="heading">
+    <h1>{{post.title}}</h1>
+    <h4>Published date: {{post.published_date}}</h4>
+  </div>
+  <div class="content">
+    {% if post.image %}
+    <div class="post-image">
+      <img src="{{ post.image.url }}" alt="{{ post.title }}" />
+    </div>
+    {% endif %}
+    <p>{{post.body|safe}}</p>
+  </div>
+</div>
+
+{%endblock%}

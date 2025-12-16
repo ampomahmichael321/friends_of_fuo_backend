@@ -1,0 +1,59 @@
+.latest-stories-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+  width: 100%;
+  justify-content: center;
+}
+.story-card {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  justify-content: center;
+  gap: 1em;
+  box-shadow: 0 20px 10px 5px rgba(134, 133, 133, 0.15);
+  transition: transform 0.3s;
+}
+.story-card img {
+  width: 100%;
+  object-fit: cover;
+  aspect-ratio: 16/9;
+}
+
+.story-card .bottom-section {
+  padding: 1em;
+}
+
+.learn-more-link,
+.blog-link {
+  color: #cb1b44;
+}
+.blog-link {
+  border-bottom: solid 2px #cb1b44;
+}
+.main a {
+  color: black;
+}
+.date {
+  margin-top: auto;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+  max-width: 95%;
+  align-items: flex-start;
+}
+.color-gold {
+  color: gold;
+  font-weight: 400;
+  text-align: center;
+  align-self: center;
+  padding: 1em 0;
+}
+
+@media (min-width: 600px) {
+  .story-card {
+    width: 25em;
+  }
+}

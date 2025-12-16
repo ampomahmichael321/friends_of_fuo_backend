@@ -1,0 +1,46 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'styles/layout.css' %}" />
+    <script src="{% static 'scripts/layout.js'%}"></script>
+    {% block head %}{% endblock %}
+  </head>
+  <body>
+    <nav data-aos="fade-down">
+      <h1>LOGO</h1>
+      <div class="nav-links">
+        <!-- Make the contact display a pop up showing all the contacts -->
+        <!-- Add link for the shop and blog for later -->
+        <a href="index.html" class="nav-link">HOME</a>
+        <a href="#about-section" class="nav-link">ABOUT</a>
+        <a href="" class="nav-link blog-link">BLOG</a>
+        <a href="" class="nav-link">SHOP</a>
+        <p href="" class="nav-link">CONTACT</p>
+      </div>
+      <div class="nav-buttons">
+        <a href="" class="button donate-button">DONATE</a>
+        <img
+          class="menu-button"
+          src="{% static 'icons/menu-icon-black.png' %}"
+          alt="menu-button"
+        />
+      </div>
+    </nav>
+    <div class="hidden-menu">
+      <div class="close-button">
+        <img src="./icons/close-icon-black.png" alt="close-button" />
+      </div>
+      <a href="index.html" class="nav-link">HOME</a>
+      <a href="#about-section" class="nav-link">ABOUT</a>
+      <a href="" class="nav-link">BLOG</a>
+      <a href="" class="nav-link">SHOP</a>
+      <p href="" class="nav-link">CONTACT</p>
+    </div>
+    {% block main %}{% endblock %}
+  </body>
+</html>
