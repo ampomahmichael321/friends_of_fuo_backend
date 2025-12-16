@@ -1,0 +1,36 @@
+.main {
+  padding: 0 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.heading {
+  border-bottom: solid 2px gold;
+  width: 95%;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  max-width: 95%;
+  align-items: flex-start;
+  padding: 2em 0;
+}
+.post-image {
+  width: 100%;
+  display: flex;
+  align-self: center;
+}
+.post-image img {
+  width: 100%;
+  object-fit: cover;
+  aspect-ratio: 16/9;
+}
+
+@media (min-width: 600px) {
+  .post-image,
+  .content {
+    width: 80%;
+  }
+}
