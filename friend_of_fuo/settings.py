@@ -171,8 +171,8 @@ JAZZMIN_SETTINGS = {
     "show_sidebar": True,
     "navigation_expanded": True,
     "topmenu_links": [
-        {"name": "Homepage", "url": "https://ampomahmichael321.github.io/friends-of-fuo/", "new_window": True},
-        {"name": "Blogsite", "url": "http://127.0.0.1:8000/blog", "new_window": True},
+        {"name": "Homepage", "url": "https://friendsoffuo.netlify.app/", "new_window": True},
+        {"name": "Blogsite", "url": "https://friends-of-fuo-backend.onrender.com/blog/", "new_window": True},
         {"name": "Shop Admin", "url": "https://selar.com/me/dashboard", "new_window": True},
     ],
     "user_avatar": None,  
