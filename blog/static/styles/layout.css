@@ -86,9 +86,7 @@ nav {
 .nav-link {
   color: black;
   cursor: pointer;
-}
-.nav-link:hover {
-  transform: scaleX(1.5px);
+  transition: transform 0.3s ease-in-out;
 }
 
 body {
@@ -128,6 +126,9 @@ body {
     width: 100vw;
     align-items: center;
     padding: 1em 4em;
+  }
+  .nav-link:hover {
+    transform: scaleX(1.2);
   }
   .hidden-menu {
     display: none;
