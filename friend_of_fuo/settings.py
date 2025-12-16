@@ -45,7 +45,6 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'blog',
-    'shop',
     'ckeditor',
     'cloudinary',
     'cloudinary_storage',
@@ -183,4 +182,5 @@ JAZZMIN_UI_TWEAKS = {
     "brand_small_text": False,
     "accent": "accent-primary",   
     "dark_mode": False,           
+
 }
