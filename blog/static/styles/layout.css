@@ -87,6 +87,9 @@ nav {
   color: black;
   cursor: pointer;
 }
+.nav-link:hover {
+  transform: scaleX(1.5px);
+}
 
 body {
   background-color: #f5f2f2;
@@ -103,22 +106,6 @@ body {
 }
 .pagination a {
   color: blue;
-}
-
-.contact-pop-up {
-  opacity: 0;
-  position: fixed;
-  top: 20%;
-  left: 50%;
-  display: flex;
-  flex-direction: column;
-  gap: 1em;
-  transform: translate(-50%, -50%);
-  background-color: white;
-  padding: 2em;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  z-index: 200;
-  transition: opacity 0.3s ease-in-out;
 }
 
 @media (min-width: 600px) {
