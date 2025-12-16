@@ -42,8 +42,7 @@ nav {
   width: 3em;
 }
 
-.hidden-menu,
-.pop-up-window-hidden {
+.hidden-menu {
   transform: translateX(200em);
   display: flex;
   flex-direction: column;
