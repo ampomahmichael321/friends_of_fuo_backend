@@ -166,7 +166,6 @@ DEFAULT_FILE_STORAGE = "cloudinary_storage.storage.MediaCloudinaryStorage"
 ADMIN_DISABLE_RECENT_ACTIONS = True
 # Jazzmin admin settings
 JAZZMIN_SETTINGS = {
-    "show_ui_builder": True,
     "site_title": "Friends of FUO Admin",
     "site_header": "Friends of FUO",
     "site_brand": "Friends of FUO",
