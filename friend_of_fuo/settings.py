@@ -163,7 +163,7 @@ CLOUDINARY_STORAGE = {
 DEFAULT_FILE_STORAGE = "cloudinary_storage.storage.MediaCloudinaryStorage"
 
 #Disable recent actions on admin dashboard
-ADMIN_DISABLE_RECENT_ACTIONS = True
+
 # Jazzmin admin settings
 JAZZMIN_SETTINGS = {
     "site_title": "Friends of FUO Admin",
@@ -189,7 +189,7 @@ JAZZMIN_SETTINGS = {
 }
 # Jazzmin UI tweaks (colors/fonts)
 JAZZMIN_UI_TWEAKS = {
-    "navbar_small_text": False,
+    "navbar_small_text": "true",
     "footer_small_text": False,
     "body_small_text": False,
     "accent": "accent-primary",   
