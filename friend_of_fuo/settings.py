@@ -169,11 +169,18 @@ JAZZMIN_SETTINGS = {
     "site_logo": "Friends of Fuo",  # path in your static files
     "welcome_sign": "Welcome to Friends of FUO Admin",
     "show_sidebar": True,
+     "hide_apps": ["auth"],
+     "custom_links": {
+        "ShopAdmin": [{
+            "name": "Shop Admin",
+            "url": "https://selar.com/me/dashboard",
+            "new_window": True
+        }]},
     "navigation_expanded": True,
     "topmenu_links": [
         {"name": "Homepage", "url": "https://friendsoffuo.netlify.app/", "new_window": True},
         {"name": "Blogsite", "url": "https://friends-of-fuo-backend.onrender.com/blog/", "new_window": True},
-        {"name": "Shop Admin", "url": "https://selar.com/me/dashboard", "new_window": True},
+        {"name": "Shop", "url": "https://selar.com/m/friends-of-fuo-2-inc1", "new_window": True},
     ],
     "user_avatar": None,  
 }
