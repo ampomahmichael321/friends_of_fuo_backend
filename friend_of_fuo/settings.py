@@ -48,6 +48,7 @@ INSTALLED_APPS = [
     'ckeditor',
     'cloudinary',
     'cloudinary_storage',
+    'shop',
 ]
 
 MIDDLEWARE = [
@@ -171,7 +172,7 @@ JAZZMIN_SETTINGS = {
     "show_sidebar": True,
      "hide_apps": ["auth"],
      "custom_links": {
-        "ShopAdmin": [{
+        "shop": [{
             "name": "Shop Admin",
             "url": "https://selar.com/me/dashboard",
             "new_window": True
