@@ -37,6 +37,7 @@ ALLOWED_HOSTS = ['friends-of-fuo-backend.onrender.com']
 # Application definition
 
 INSTALLED_APPS = [
+     'blog',
     "jazzmin", 
     'django.contrib.admin',
     'django.contrib.auth',
@@ -48,7 +49,7 @@ INSTALLED_APPS = [
     'cloudinary',
     'cloudinary_storage',
     'shop_admin',
-    'blog',
+   
 ]
 
 MIDDLEWARE = [
