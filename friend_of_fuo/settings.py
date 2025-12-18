@@ -183,6 +183,7 @@ JAZZMIN_SETTINGS = {
         {"name": "Blogsite", "url": "https://friends-of-fuo-backend.onrender.com/blog/", "new_window": True},
         {"name": "Shop", "url": "https://selar.com/m/friends-of-fuo-2-inc1", "new_window": True},
     ],
+     "hide_models": ["admin.LogEntry"],
     "user_avatar": None,  
 }
 # Jazzmin UI tweaks (colors/fonts)
