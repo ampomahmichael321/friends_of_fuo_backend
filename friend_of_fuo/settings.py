@@ -162,6 +162,8 @@ CLOUDINARY_STORAGE = {
 }
 DEFAULT_FILE_STORAGE = "cloudinary_storage.storage.MediaCloudinaryStorage"
 
+#Disable recent actions on admin dashboard
+ADMIN_DISABLE_RECENT_ACTIONS = True
 # Jazzmin admin settings
 JAZZMIN_SETTINGS = {
     "show_ui_builder": True,
@@ -186,7 +188,6 @@ JAZZMIN_SETTINGS = {
         {"name": "Blogsite", "url": "https://friends-of-fuo-backend.onrender.com/blog/", "new_window": True},
         {"name": "Shop", "url": "https://selar.com/m/friends-of-fuo-2-inc1", "new_window": True},
     ],
-    "hide_models": ["admin.LogEntry"],
     "user_avatar": None,  
 }
 # Jazzmin UI tweaks (colors/fonts)
@@ -194,7 +195,6 @@ JAZZMIN_UI_TWEAKS = {
     "navbar_small_text": False,
     "footer_small_text": False,
     "body_small_text": False,
-    "brand_small_text": False,
     "accent": "accent-primary",   
     "dark_mode": False,           
 
