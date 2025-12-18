@@ -31,13 +31,14 @@ SECRET_KEY = os.getenv('DJANGO_SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['friends-of-fuo-backend.onrender.com']
+ALLOWED_HOSTS = ['friends-of-fuo-backend.onrender.com','127.0.0.1',
+    'localhost',]
 
 
 # Application definition
 
 INSTALLED_APPS = [
-     'blog',
+    'blog',
     "jazzmin", 
     'django.contrib.admin',
     'django.contrib.auth',
