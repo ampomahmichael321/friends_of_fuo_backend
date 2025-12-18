@@ -171,8 +171,10 @@ JAZZMIN_SETTINGS = {
     "site_logo": "Friends of Fuo",  # path in your static files
     "welcome_sign": "Welcome to Friends of FUO Admin",
     "show_sidebar": True,
-     "hide_apps": ["auth"],
-     "custom_links": {
+    "brand_small_text": True,
+    "sidebar_fixed": True,
+    "hide_apps": ["auth"],
+    "custom_links": {
         "shop_admin": [{
             "name": "Shop Admin",
             "url": "https://selar.com/me/dashboard",
@@ -184,7 +186,7 @@ JAZZMIN_SETTINGS = {
         {"name": "Blogsite", "url": "https://friends-of-fuo-backend.onrender.com/blog/", "new_window": True},
         {"name": "Shop", "url": "https://selar.com/m/friends-of-fuo-2-inc1", "new_window": True},
     ],
-     "hide_models": ["admin.LogEntry"],
+    "hide_models": ["admin.LogEntry"],
     "user_avatar": None,  
 }
 # Jazzmin UI tweaks (colors/fonts)
