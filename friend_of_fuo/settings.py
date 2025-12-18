@@ -37,6 +37,7 @@ ALLOWED_HOSTS = ['friends-of-fuo-backend.onrender.com']
 # Application definition
 
 INSTALLED_APPS = [
+    'blog',
     "jazzmin", 
     'django.contrib.admin',
     'django.contrib.auth',
@@ -44,11 +45,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'blog',
     'ckeditor',
     'cloudinary',
     'cloudinary_storage',
-    'shop',
+    'shop_admin',
 ]
 
 MIDDLEWARE = [
@@ -172,7 +172,7 @@ JAZZMIN_SETTINGS = {
     "show_sidebar": True,
      "hide_apps": ["auth"],
      "custom_links": {
-        "shop": [{
+        "shop_admin": [{
             "name": "Shop Admin",
             "url": "https://selar.com/me/dashboard",
             "new_window": True
