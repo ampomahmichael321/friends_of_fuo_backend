@@ -172,8 +172,6 @@ JAZZMIN_SETTINGS = {
     "site_logo": "Friends of Fuo",  # path in your static files
     "welcome_sign": "Welcome to Friends of FUO Admin",
     "show_sidebar": True,
-    "brand_small_text": True,
-    "sidebar_fixed": True,
     "hide_apps": ["auth"],
     "custom_links": {
         "shop_admin": [{
@@ -195,7 +193,9 @@ JAZZMIN_UI_TWEAKS = {
     "footer_small_text": False,
     "body_small_text": False,
     "accent": "accent-primary",   
-    "dark_mode": False,           
+    "dark_mode": False,     
+    "brand_small_text": True,
+    "sidebar_fixed": True,      
 
 }
 
