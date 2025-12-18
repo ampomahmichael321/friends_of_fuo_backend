@@ -37,7 +37,6 @@ ALLOWED_HOSTS = ['friends-of-fuo-backend.onrender.com']
 # Application definition
 
 INSTALLED_APPS = [
-    'blog',
     "jazzmin", 
     'django.contrib.admin',
     'django.contrib.auth',
@@ -49,6 +48,7 @@ INSTALLED_APPS = [
     'cloudinary',
     'cloudinary_storage',
     'shop_admin',
+    'blog',
 ]
 
 MIDDLEWARE = [
@@ -164,6 +164,7 @@ DEFAULT_FILE_STORAGE = "cloudinary_storage.storage.MediaCloudinaryStorage"
 
 # Jazzmin admin settings
 JAZZMIN_SETTINGS = {
+    "show_ui_builder": True,
     "site_title": "Friends of FUO Admin",
     "site_header": "Friends of FUO",
     "site_brand": "Friends of FUO",
